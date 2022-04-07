@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-07T20:05:10.427Z",
+    "end": "2022-04-07T20:05:10.435Z",
+    "duration": 8,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d73447f-52b3-41b2-80a1-34c2d3399675",
+      "title": "",
+      "fullFile": "/Users/pratiksurani/Downloads/5 Assignment/DEV TEST JS AXONE/2 Module/MochaTest/specs/spec.js",
+      "file": "/specs/spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "201675db-52d7-4a04-acfa-7c2ce4f6d1bf",
+          "title": "Array tests",
+          "fullFile": "/Users/pratiksurani/Downloads/5 Assignment/DEV TEST JS AXONE/2 Module/MochaTest/specs/spec.js",
+          "file": "/specs/spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assert the length of the array",
+              "fullTitle": "Array tests Assert the length of the array",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(names.length).to.equal(5)",
+              "err": {},
+              "uuid": "dd2c7c58-c0b3-4b5e-99d3-45fcd065c2fc",
+              "parentUUID": "201675db-52d7-4a04-acfa-7c2ce4f6d1bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assert the name contains Daniel",
+              "fullTitle": "Array tests Assert the name contains Daniel",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "assert.isTrue(names.includes('Daniel'))",
+              "err": {
+                "message": "AssertionError: expected false to be true",
+                "estack": "AssertionError: expected false to be true\n    at Context.<anonymous> (file:///Users/pratiksurani/Downloads/5%20Assignment/DEV%20TEST%20JS%20AXONE/2%20Module/MochaTest/specs/spec.js:10:16)\n    at processImmediate (node:internal/timers:463:21)",
+                "diff": "- false\n+ true\n"
+              },
+              "uuid": "d086c382-2352-4488-8e51-f7d0e0d01a58",
+              "parentUUID": "201675db-52d7-4a04-acfa-7c2ce4f6d1bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assert length of filtered names",
+              "fullTitle": "Array tests Assert length of filtered names",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let filteredNames = names.filter(name => name.startsWith('Jack'))\nexpect(filteredNames.length).to.equal(2)",
+              "err": {},
+              "uuid": "302e8ded-9d5f-4ddc-b714-7a7946198356",
+              "parentUUID": "201675db-52d7-4a04-acfa-7c2ce4f6d1bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dd2c7c58-c0b3-4b5e-99d3-45fcd065c2fc",
+            "302e8ded-9d5f-4ddc-b714-7a7946198356"
+          ],
+          "failures": [
+            "d086c382-2352-4488-8e51-f7d0e0d01a58"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "index",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "reportFilename": "index"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
